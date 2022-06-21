@@ -39,6 +39,9 @@ equipments.index.name = "equipment_name"
 equipment_measurements = None  # dataframe
 
 # your solution here
+equipment_measurements = pd.concat([equipments, measurements], axis=1)
+equipment_measurements["equipment_id"] = ["EQ"+str(i) for i in range(10)]
+equipment_measurements.set_index(["equipment_id", "sample_day", "sample_month"], inplace=True)
 
 keys = ("EQ2", "18", "12")
 compound = "meglitinides"
@@ -50,3 +53,4 @@ meglitinides_measurement = equipment_measurements.loc[keys, compound]  # float
 avg_monthly_runtime = None  # dataframe
 
 # your solution here
+avg_monthly_runtime = equipment_measurements.groupby("sample_month").runtime.mean()
