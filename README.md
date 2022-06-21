@@ -18,7 +18,13 @@ Should you have any questions, please contact Diogo at 31443612.
 
 A team of chemists needs you to securely clone this repo with an SSH key. Show that you've successfuly cloned and pushed to your cloned public repo by sending us its url. 
 
-*your explanation goes here, include prints wherever you find it appropriate*
+- ssh-keygen -o -t rsa -C "exercise_david_key"
+- (go to user directory -> /.ssh/id_rsa for public key and add to GitHub)
+- git clone git@github.com:datafoundationcmc/cmc_dataeng_internship_exercise.git
+
+- (push this repository to your own account)
+- git remote set-url origin git@github.com:davidmiskic/davidmiskic_cmc_dataeng_internship_exercise.git
+- git push
 
 ### exercise 1.2 Git Ops
 
