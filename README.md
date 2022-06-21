@@ -83,3 +83,5 @@ Coding for our patients.
  ![alt text](public/runtime_average.png)
 
  *your explanation goes here, include prints wherever you find it appropriate or code snippets*
+- using groupby for getting data for each month
+- using set_index for multiple keyes, must be in that order
