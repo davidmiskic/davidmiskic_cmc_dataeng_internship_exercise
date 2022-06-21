@@ -50,6 +50,10 @@ After you have finished your exercises, merge to `dev` and then to `main`. We'll
 
 *your explanation goes here, include prints wherever you find it appropriate*
 
+- git checkout -b <branch-name> for branching 
+- git merge <branch-name> for merging branch-name to current
+
+
 ## exercise 1.3: Packages
 
 Deploy a python package named `cmc_dataeng_internship_<your-name>` to PyPi. We'll be running `pip install cmc_dataeng_internship_<your-name>` and executing the python package such that:
@@ -62,6 +66,13 @@ Coding for our patients.
 
 *your explanation goes here, include prints wherever you find it appropriate or code snippets*
 
+- folder with appropriate structure
+- setup.py or setup.cfg, take care to include the packages in setup
+- py -m build
+- python -m twine upload dist/*
+- accessible at: https://pypi.org/project/cmc-dataeng-internship-davidmiskic/
+- pip install cmc-dataeng-internship-davidmiskic
+
 ## exercise 2 Data Analytics
  You'll find a simple pandas exercise in `data_analytics.py`. The code you find is to be left untouched. You should replace only the lines where you read `# your solution here`. As a hint, your `equipment_measures` dataset could look something like this:
 
@@ -72,3 +83,5 @@ Coding for our patients.
  ![alt text](public/runtime_average.png)
 
  *your explanation goes here, include prints wherever you find it appropriate or code snippets*
+- using groupby for getting data for each month
+- using set_index for multiple keyes, must be in that order
