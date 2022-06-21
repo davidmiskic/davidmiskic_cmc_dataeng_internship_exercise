@@ -36,7 +36,7 @@ equipments.index.name = "equipment_name"
 
 # exercise 2.1 Get the random measurement of the equipment 2
 # for meglitinides sampled the 18th of Decembre
-equipment_measurements = None  # dataframe
+equipment_measurements = "abc"  # dataframe
 
 # your solution here
 equipment_measurements = pd.concat([equipments, measurements], axis=1)
